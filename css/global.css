@@ -3,6 +3,7 @@
 
 :root {
   --light: #e5e5e5;
+  --white: #ffffff;
   --dark: #1b1c20;
   --gray: #757575;
 
@@ -16,4 +17,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
 }

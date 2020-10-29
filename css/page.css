@@ -1,7 +1,6 @@
 .main {
   background-color: green;
-}
-
-.slingshot_stories {
-  background-color: var(--light);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
 }

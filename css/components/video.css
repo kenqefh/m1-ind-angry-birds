@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 360px;
 }
 .video__image {
   width: 100%;
