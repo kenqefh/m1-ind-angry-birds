@@ -1,0 +1,17 @@
+.text {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.text--bold {
+  font-size: var(--font-size-medium);
+  line-height: 22px;
+  color: var(--dark);
+}
+
+.text--normal {
+  font-size: var(--font-size-small);
+  line-height: 23px;
+  color: var(--gray);
+}
