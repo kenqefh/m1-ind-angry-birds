@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 8px;
   max-width: 360px;
-  min-width: 206px;
 }
 
 .video__preview {

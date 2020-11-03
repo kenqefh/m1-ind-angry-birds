@@ -1,6 +1,5 @@
 .slingshot_stories {
   background-color: var(--white);
-  padding-top: 100px;
 
   display: flex;
   flex-direction: column;
@@ -22,14 +21,45 @@
   display: grid;
   gap: 20px 10px;
   grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
-  justify-content: center;
 }
 
-@media (max-width: 760px) {
+/* Para amotiguar el efecto de 1200 a 760px  */
+@media only screen and (max-width: 1024px) {
+  .slingshot_stories {
+    padding: 77px 30px 40px;
+  }
+  .slingshot_stories__header {
+    height: 120px;
+  }
+}
+
+/**
+ * 768px por ser estandar y el ancho de referencia es 760px,
+ * es recomendable iniciar el efecto unos pixeles antes
+ */
+@media only screen and (max-width: 768px) {
   .slingshot_stories {
     padding: 70px 15px 40px;
   }
   .slingshot_stories__header {
     height: 94px;
+  }
+  /**
+  * 270px en lugar de 206px debido a que 206 * 3 = 618 < 760,
+  * entonces nuestra pantalla tiene espacio para tres cards y no dos
+  */
+  .slingshot_stories__videos {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+/**
+ * Ahora que tenemos 270px * 2 < N < 206px*3 podemos regresar el ancho
+ * del video a sus dimensiones originales 206px - 360px
+ * y de paso centrar el contenido 
+ */
+@media only screen and (max-width: 600px) {
+  .slingshot_stories__videos {
+    grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
+    justify-items: center;
   }
 }
