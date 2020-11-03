@@ -3,11 +3,42 @@
   flex-direction: column;
   gap: 8px;
   max-width: 360px;
+  min-width: 206px;
+}
+
+.video__preview {
+  position: relative;
 }
 .video__image {
   width: 100%;
-  height: auto;
-  object-fit: fill;
+  object-fit: contain;
+}
+.video__duration {
+  position: absolute;
+  bottom: 9px;
+  right: 5px;
+}
+
+.video__preview-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: var(--transparent);
+  opacity: 0;
+
+  transition: all 300ms ease-in 0ms;
+  transform-origin: left;
+}
+.video__preview-hover-image {
+  height: 35px;
+  place-self: center;
+}
+
+.video__preview:hover > .video__preview-hover {
+  opacity: 1;
 }
 
 .video__description {

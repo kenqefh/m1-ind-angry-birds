@@ -5,7 +5,10 @@
   --light: #e5e5e5;
   --white: #ffffff;
   --dark: #1b1c20;
+  --black: #000000;
   --gray: #757575;
+  --green: #95eac1;
+  --transparent: rgba(0, 0, 0, 0.2);
 
   --font: "Oswald", sans-serif;
 
@@ -17,8 +20,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: var(--light);
 }

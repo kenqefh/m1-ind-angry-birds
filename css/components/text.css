@@ -15,3 +15,11 @@
   line-height: 23px;
   color: var(--gray);
 }
+
+.text--small {
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 5px 5px;
+}
